@@ -6,6 +6,7 @@
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
+        "plugin:import/react",
         "airbnb-base"
     ],
     "parserOptions": {
@@ -19,5 +20,15 @@
         "react"
     ],
     "rules": {
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        },
+        "import/resolver": {
+            "node": {
+                "extensions": [".js",".jsx"]
+            }
+        }
     }
 }
