@@ -6,7 +6,7 @@ const styles = {
     body: {
       margin: 0,
       display: 'flex',
-      minWidth: '320px',
+      minWidth: '100vw',
       minHeight: '100vh',
       fontFamily: 'Inter, Avenir, Helvetica, Arial, sans-serif;',
       bg: mode('whiteAlpha.900', '#242424')(props),
