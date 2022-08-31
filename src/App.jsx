@@ -1,9 +1,10 @@
 import React from 'react';
+import HomeView from './assets/views/HomeView';
 
 function App() {
   return (
     <>
-      <h1>xD</h1>
+      <HomeView />
     </>
   );
 }
