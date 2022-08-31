@@ -6,18 +6,23 @@ import Navbar from '../navbars/Navbar';
 
 export default function MainLayout({ children }) {
   return (
-    <Flex direction="column" minW="100vw" minH="100vh">
+    <Flex direction="column" minW="100vw" minH="100vh" alignItems="center">
       <Navbar />
       <Flex
         direction="column"
-        alignItems="center"
-        justify="center"
-        minH="100%"
+        // alignItems="center"
+        minH="85vh"
+        h="100%"
         w="100%"
-        maxW={['90vw', '80vw', '80vw', '75rem']}
-        m="auto"
       >
-        {children}
+        <Flex
+          direction="column"
+          alignSelf="center"
+          w="100%"
+          maxW={['90vw', '80vw', '80vw', '75rem']}
+        >
+          {children}
+        </Flex>
       </Flex>
     </Flex>
   );
